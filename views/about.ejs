@@ -1,0 +1,76 @@
+<%- include('layouts/navbar', { active: 'about' }) %>
+
+<div class="about-us-section" style="background: linear-gradient(135deg, rgb(0, 16, 22) 10%, rgb(255, 145, 0) 100%);">
+    <div class="container">
+        <br>
+        <br>
+        <h5 class="card-title text-center" style="color: white;">About Us</h5>
+        <p class="card-text text-center" style="color: white;">
+            <strong>Mie Aceh</strong> merupakan salah satu makanan yang berasal dari Aceh. Mie ini memiliki cita rasa yang kaya rempah, dan rasa pedas yang menggugah selera. Rasa kuahnya terkenal dengan rasa gurih, pedas, asin, dan penuh dengan aroma khas Aceh yang begitu kaya akan rempah. Tekstur mie nya yang lembut dan tebal membuat mie ini terasa mengenyangkan.
+            <br>
+            <br>
+            Sebagai orang Indonesia tentu tak lengkap jika makan tapi tidak pakai saus cabai / sambal, karena 2 baha tersebut membuat makanan jadi lebih gurih. Maka dari itu kami membuka usaha Mie Aceh Siman agar lebih banyak orang lagi merasakan kenikamatan dari Mie Aceh, kami juga menjual berbagai bumbu untuk memenuhi kebutuhan masakan rumahan.
+            <br>
+            <strong>Menu yang kami jual ada :</strong>
+        </p>
+        <br>
+
+        <div class="row">
+            <!-- About Us Card -->
+            <div class="eek col-lg-6">
+                <div class="card about-us-card" style="border: 2px solid #FF9100; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); background-color: #051922;">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="/assets/img/bumbu.png" alt="About Us Image" class="card-img-top about-us-image" style="max-width: 70%;">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <h5 class="text-au card-title" style="color: white;">Aneka Bumbu</h5>
+                                <p class="text-des card-text" style="color: white;">Dengan perpaduan rempah-rempah pilihan seperti serai, jahe, bawang merah, bawang putih, dan cabai, Bumbu Mie Aceh kami diracik secara hati-hati untuk menghasilkan kuah yang gurih, pedas, dan memikat. Selain Bumbu Mie Aceh, kami juga menyediakan berbagai macam bumbu dapur lainnya untuk melengkapi kebutuhan kuliner Anda. </p>
+                                <!-- Add more text or content here as needed -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 1: Mie Aceh -->
+            <div class="eek col-lg-6">
+                <div class="card product-card" style="border: 2px solid #FF9100; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); background-color: #051922;">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="/assets/img/mieaceh.png" alt="Mie Aceh" class="card-img-top product-image" style="max-width: 100%;">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <h5 class="text-au card-title" style="color: white;">Mie Aceh</h5>
+                                <p class="text-des card-text" style="color: white;">Mie Aceh adalah hidangan mie khas dari daerah Aceh, Indonesia. Mie ini terkenal karena citarasa pedas dan kaya rempah, mencerminkan kekayaan kuliner Aceh. Beberapa ciri khas dari Mie Aceh adalah mie kuning yang digunakan dan kuahnya yang kaya rasa.</p>
+                                <!-- Add more details if needed -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Ambil elemen kartu pertama
+        var card1 = document.querySelector('.about-us-card');
+
+        // Ambil elemen kartu produk (Mie Aceh)
+        var card2 = document.querySelector('.product-card');
+
+        // Tentukan tinggi maksimum dari kedua kartu
+        var maxHeight = Math.max(card1.offsetHeight, card2.offsetHeight);
+
+        // Terapkan tinggi maksimum ke kedua kartu
+        card1.style.height = maxHeight + 'px';
+        card2.style.height = maxHeight + 'px';
+    });
+
+</script>
+<!-- Pastikan jQuery sudah di-load sebelum script ini -->
+<%- include('layouts/footer') %> 
